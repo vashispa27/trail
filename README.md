@@ -28,7 +28,7 @@ Then `trail why file:line` goes from the line to the commit, to the session, to 
 Needs Python 3.9+ and git. The dashboard needs Node.js 20+.
 
 ```sh
-git clone https://github.com/blurr2710/trail
+git clone https://github.com/vashispa27/trail
 cd your-repo
 /path/to/trail/bin/trail init     # writes .trail.yaml and installs the git hooks
 git commit ...                    # sessions are linked automatically from now on
