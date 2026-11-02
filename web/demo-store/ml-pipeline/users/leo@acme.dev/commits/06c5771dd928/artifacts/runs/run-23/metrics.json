@@ -1,0 +1,6 @@
+{
+  "run": "run-23",
+  "stopped_at_step": 2600,
+  "best_step": 2000,
+  "eval_loss": 1.84
+}

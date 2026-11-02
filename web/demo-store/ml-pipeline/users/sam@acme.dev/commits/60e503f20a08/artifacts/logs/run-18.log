@@ -1,0 +1,4 @@
+step 400 loss 2.30 grad_norm 2.1 lr 2.0e-4
+step 520 loss 2.33 grad_norm 31.0
+step 540 loss nan
+DIVERGED

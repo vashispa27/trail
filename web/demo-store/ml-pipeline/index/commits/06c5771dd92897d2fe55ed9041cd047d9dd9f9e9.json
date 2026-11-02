@@ -1,0 +1,21 @@
+{
+  "sha": "06c5771dd92897d2fe55ed9041cd047d9dd9f9e9",
+  "subject": "Stop training early when eval loss plateaus",
+  "date": "2026-11-02T09:48:00Z",
+  "user": "leo@acme.dev",
+  "branch": "main",
+  "commit_dir": "ml-pipeline/users/leo@acme.dev/commits/06c5771dd928",
+  "sessions": [
+    {
+      "key": "claude:f03e64a7-16f8-4caf-98ce-067fafd3fab4",
+      "harness": "claude",
+      "session_id": "f03e64a7-16f8-4caf-98ce-067fafd3fab4",
+      "title": "Runs keep going long after eval loss stops improving. Add early stopping.",
+      "dir": "ml-pipeline/users/leo@acme.dev/sessions/f03e64a7-16f8-4caf-98ce-067fafd3fab4",
+      "transcript_range": [
+        0,
+        8
+      ]
+    }
+  ]
+}

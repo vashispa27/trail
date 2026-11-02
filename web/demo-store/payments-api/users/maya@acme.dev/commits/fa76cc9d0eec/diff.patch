@@ -1,0 +1,38 @@
+ app/webhooks.py        | 10 ++++++++--
+ tests/test_webhooks.py |  8 ++++++++
+ 2 files changed, 16 insertions(+), 2 deletions(-)
+
+diff --git a/app/webhooks.py b/app/webhooks.py
+index 09c59d0..94653ee 100644
+--- a/app/webhooks.py
++++ b/app/webhooks.py
+@@ -3,7 +3,13 @@ from app.stripe import capture
+ 
+ 
+ def handle_payment_succeeded(event):
+-    order = db.orders.get(event["data"]["order_id"])
+-    capture(order.payment_intent)
++    # Stripe retries any delivery that takes over 30s; the same event can arrive twice.
++    with db.transaction():
++        if not db.processed_events.add(event["id"]):
++            return  # already handled
++        order = db.orders.get(event["data"]["order_id"], for_update=True)
++        if order.status == "paid":
++            return
++        capture(order.payment_intent)
+     order.status = "paid"
+     db.orders.save(order)
+diff --git a/tests/test_webhooks.py b/tests/test_webhooks.py
+new file mode 100644
+index 0000000..fe05a16
+--- /dev/null
++++ b/tests/test_webhooks.py
+@@ -0,0 +1,8 @@
++from app.webhooks import handle_payment_succeeded
++
++
++def test_retry_does_not_capture_twice(fake_db, fake_stripe):
++    event = {"id": "evt_1", "data": {"order_id": 1}}
++    handle_payment_succeeded(event)
++    handle_payment_succeeded(event)
++    assert fake_stripe.captures == 1

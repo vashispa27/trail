@@ -1,0 +1,63 @@
+ .gitignore  |  3 +++
+ .trail.yaml |  4 ++++
+ README.md   |  3 +++
+ data.py     | 10 ++++++++++
+ train.py    |  6 ++++++
+ 5 files changed, 26 insertions(+)
+
+diff --git a/.gitignore b/.gitignore
+new file mode 100644
+index 0000000..7a1510d
+--- /dev/null
++++ b/.gitignore
+@@ -0,0 +1,3 @@
++logs/
++runs/
++reports/
+diff --git a/.trail.yaml b/.trail.yaml
+new file mode 100644
+index 0000000..3a0b186
+--- /dev/null
++++ b/.trail.yaml
+@@ -0,0 +1,4 @@
++store: supabase://trail/main
++repo: ml-pipeline
++harnesses: [claude, codex]
++artifacts: ["logs/", "runs/**/metrics.json"]
+diff --git a/README.md b/README.md
+new file mode 100644
+index 0000000..39050fc
+--- /dev/null
++++ b/README.md
+@@ -0,0 +1,3 @@
++# ml-pipeline
++
++Fine-tuning for the support assistant. LoRA on a 7B base model.
+diff --git a/data.py b/data.py
+new file mode 100644
+index 0000000..92f70f8
+--- /dev/null
++++ b/data.py
+@@ -0,0 +1,10 @@
++import json
++
++
++def split(prompts, eval_frac=0.05):
++    seen = set()
++    for p in prompts:
++        key = p
++        if key in seen:
++            continue
++        seen.add(key)
+diff --git a/train.py b/train.py
+new file mode 100644
+index 0000000..9bec56e
+--- /dev/null
++++ b/train.py
+@@ -0,0 +1,6 @@
++MODEL = "llama-7b"
++LORA_RANK = 64
++LR = 3e-4
++WARMUP_STEPS = 100
++GRAD_CLIP = None
++EARLY_STOP_PATIENCE = None

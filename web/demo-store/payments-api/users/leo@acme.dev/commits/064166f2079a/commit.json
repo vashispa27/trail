@@ -1,0 +1,30 @@
+{
+  "sha": "064166f2079ace776882bd38fd212f4739ef9e6b",
+  "subject": "Reject duplicate refunds and cap refunds per order",
+  "message": "Reject duplicate refunds and cap refunds per order\n\nTrail-Session: codex:588264da-bbc7-49f7-9130-d2cfe6125fcd\nTrail-Link: http://localhost:8787/repos/payments-api/session/588264da-bbc7-49f7-9130-d2cfe6125fcd",
+  "author": "Leo Park <leo@acme.dev>",
+  "date": "2026-10-28T17:00:00Z",
+  "branch": "main",
+  "files": [
+    "M app/refunds.py"
+  ],
+  "artifacts": {
+    "files": [
+      "reports/refund-abuse.md"
+    ],
+    "skipped": []
+  },
+  "sessions": [
+    {
+      "key": "codex:588264da-bbc7-49f7-9130-d2cfe6125fcd",
+      "harness": "codex",
+      "session_id": "588264da-bbc7-49f7-9130-d2cfe6125fcd",
+      "title": "Support agents keep double-clicking refund and we refund twice (see reports/refund-abuse.md). Limit refunds to 3 per order per hour and reje",
+      "dir": "payments-api/users/leo@acme.dev/sessions/588264da-bbc7-49f7-9130-d2cfe6125fcd",
+      "transcript_range": [
+        0,
+        10
+      ]
+    }
+  ]
+}

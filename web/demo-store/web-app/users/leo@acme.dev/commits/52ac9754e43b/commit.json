@@ -1,0 +1,22 @@
+{
+  "sha": "52ac9754e43b4932d950622c10a9854d6f9fb723",
+  "subject": "Initial commit",
+  "message": "Initial commit",
+  "author": "Leo Park <leo@acme.dev>",
+  "date": "2026-10-19T17:00:00Z",
+  "branch": "main",
+  "files": [
+    "A .gitignore",
+    "A .trail.yaml",
+    "A README.md",
+    "A e2e/checkout.spec.ts",
+    "A package.json",
+    "A src/components/CheckoutButton.tsx",
+    "A src/theme.ts"
+  ],
+  "artifacts": {
+    "files": [],
+    "skipped": []
+  },
+  "sessions": []
+}

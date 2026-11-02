@@ -1,0 +1,6 @@
+{
+  "name": "web-app",
+  "remote": "git@github.com:acme/web-app.git",
+  "github": null,
+  "demo": true
+}

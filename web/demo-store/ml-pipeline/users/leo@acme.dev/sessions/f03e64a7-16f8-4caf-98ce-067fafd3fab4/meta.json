@@ -1,0 +1,19 @@
+{
+  "session_id": "f03e64a7-16f8-4caf-98ce-067fafd3fab4",
+  "harness": "claude",
+  "source": "/home/dev/code/claude-projects/-home-dev-code-ml-pipeline/f03e64a7-16f8-4caf-98ce-067fafd3fab4.jsonl",
+  "commits": [
+    {
+      "sha": "06c5771dd92897d2fe55ed9041cd047d9dd9f9e9",
+      "subject": "Stop training early when eval loss plateaus",
+      "date": "2026-11-02T09:48:00Z",
+      "transcript_range": [
+        0,
+        8
+      ]
+    }
+  ],
+  "title": "Runs keep going long after eval loss stops improving. Add early stopping.",
+  "branch": "main",
+  "last_seen": "2026-11-02T09:48:00Z"
+}

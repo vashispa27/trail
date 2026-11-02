@@ -1,0 +1,21 @@
+{
+  "sha": "0a413766312468b03a35f6184c84cf2c7de9efec",
+  "subject": "Wait for the order response in checkout e2e instead of sleeping",
+  "date": "2026-11-01T17:00:00Z",
+  "user": "maya@acme.dev",
+  "branch": "main",
+  "commit_dir": "web-app/users/maya@acme.dev/commits/0a4137663124",
+  "sessions": [
+    {
+      "key": "codex:50c2b188-6c5a-4cb2-8e23-ce73e2a4ffc5",
+      "harness": "codex",
+      "session_id": "50c2b188-6c5a-4cb2-8e23-ce73e2a4ffc5",
+      "title": "The checkout e2e test fails on CI about 1 run in 5. Figure out why and make it reliable.",
+      "dir": "web-app/users/maya@acme.dev/sessions/50c2b188-6c5a-4cb2-8e23-ce73e2a4ffc5",
+      "transcript_range": [
+        0,
+        10
+      ]
+    }
+  ]
+}

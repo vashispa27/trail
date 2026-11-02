@@ -1,0 +1,20 @@
+ data.py | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+diff --git a/data.py b/data.py
+index 92f70f8..5727ed4 100644
+--- a/data.py
++++ b/data.py
+@@ -1,10 +1,11 @@
++import hashlib
+ import json
+ 
+ 
+ def split(prompts, eval_frac=0.05):
+     seen = set()
+     for p in prompts:
+-        key = p
++        key = hashlib.sha1(normalize(p).encode()).hexdigest()
+         if key in seen:
+             continue
+         seen.add(key)

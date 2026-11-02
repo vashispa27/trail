@@ -1,0 +1,26 @@
+ app/refunds.py | 11 +++++++++++
+ 1 file changed, 11 insertions(+)
+
+diff --git a/app/refunds.py b/app/refunds.py
+index b9e9744..1d3877e 100644
+--- a/app/refunds.py
++++ b/app/refunds.py
+@@ -2,7 +2,18 @@ from app.db import db
+ from app.stripe import refund
+ 
+ 
++MAX_PER_HOUR = 3
++
++
++class RefundRejected(Exception):
++    pass
++
++
+ def create_refund(order_id, amount, agent):
++    if db.refunds.count(order_id=order_id, amount=amount, since_seconds=60):
++        raise RefundRejected("duplicate refund within a minute")
++    if db.refunds.count(order_id=order_id, since_seconds=3600) >= MAX_PER_HOUR:
++        raise RefundRejected("refund limit reached for this order")
+     order = db.orders.get(order_id)
+     refund(order.payment_intent, amount)
+     db.refunds.insert(order_id=order_id, amount=amount, agent=agent)

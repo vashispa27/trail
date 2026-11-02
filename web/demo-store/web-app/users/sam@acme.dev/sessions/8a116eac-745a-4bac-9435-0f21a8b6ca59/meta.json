@@ -1,0 +1,19 @@
+{
+  "session_id": "8a116eac-745a-4bac-9435-0f21a8b6ca59",
+  "harness": "claude",
+  "source": "/home/dev/code/claude-projects/-home-dev-code-web-app/8a116eac-745a-4bac-9435-0f21a8b6ca59.jsonl",
+  "commits": [
+    {
+      "sha": "71444a2ae7d1a5b4bbafd60fd23df72f7c9722e2",
+      "subject": "Add dark mode toggle",
+      "date": "2026-10-29T17:00:00Z",
+      "transcript_range": [
+        0,
+        8
+      ]
+    }
+  ],
+  "title": "Add a dark mode toggle in the header. It should follow the system setting until someone picks, then remember their choice.",
+  "branch": "main",
+  "last_seen": "2026-10-29T17:00:00Z"
+}

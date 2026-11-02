@@ -1,0 +1,7 @@
+{
+  "run": "run-19",
+  "lr": 0.0001,
+  "warmup": 500,
+  "eval_loss": 1.82,
+  "baseline_eval_loss": 2.31
+}

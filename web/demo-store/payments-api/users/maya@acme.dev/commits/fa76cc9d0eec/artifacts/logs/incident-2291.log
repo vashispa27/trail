@@ -1,0 +1,7 @@
+14:02:11 webhook payment_intent.succeeded evt_3Px order=88412 -> captured
+14:02:41 webhook payment_intent.succeeded evt_3Px order=88412 -> captured   (Stripe retry, 30s)
+14:02:41 WARN order 88412 captured twice, customer charged $142.00 x2
+14:05:09 webhook payment_intent.succeeded evt_3Q1 order=88419 -> captured
+14:05:39 webhook payment_intent.succeeded evt_3Q1 order=88419 -> captured   (Stripe retry, 30s)
+14:05:39 WARN order 88419 captured twice, customer charged $58.50 x2
+root cause: handler took 31s (slow capture), Stripe timed out at 30s and retried

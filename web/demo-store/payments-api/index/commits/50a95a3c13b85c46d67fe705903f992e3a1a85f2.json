@@ -1,0 +1,9 @@
+{
+  "sha": "50a95a3c13b85c46d67fe705903f992e3a1a85f2",
+  "subject": "Initial commit",
+  "date": "2026-10-20T17:00:00Z",
+  "user": "sam@acme.dev",
+  "branch": "main",
+  "commit_dir": "payments-api/users/sam@acme.dev/commits/50a95a3c13b8",
+  "sessions": []
+}

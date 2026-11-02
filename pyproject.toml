@@ -1,0 +1,17 @@
+[project]
+name = "trail"
+version = "0.1.0"
+description = "Link agent sessions, logs and artifacts to git commits"
+requires-python = ">=3.9"
+dependencies = ["pyyaml"]
+
+[project.scripts]
+trail = "trail.cli:main"
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["trail"]
+

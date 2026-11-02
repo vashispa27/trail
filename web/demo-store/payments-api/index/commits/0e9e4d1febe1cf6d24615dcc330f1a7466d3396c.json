@@ -1,0 +1,21 @@
+{
+  "sha": "0e9e4d1febe1cf6d24615dcc330f1a7466d3396c",
+  "subject": "Add unique constraints for webhook events and captures",
+  "date": "2026-10-24T17:40:00Z",
+  "user": "maya@acme.dev",
+  "branch": "main",
+  "commit_dir": "payments-api/users/maya@acme.dev/commits/0e9e4d1febe1",
+  "sessions": [
+    {
+      "key": "claude:68969d63-3984-4bbf-a591-a0175931b122",
+      "harness": "claude",
+      "session_id": "68969d63-3984-4bbf-a591-a0175931b122",
+      "title": "Customers are getting charged twice when Stripe retries the payment webhook. The incident log is logs/incident-2291.log. Fix it so a retry c",
+      "dir": "payments-api/users/maya@acme.dev/sessions/68969d63-3984-4bbf-a591-a0175931b122",
+      "transcript_range": [
+        14,
+        20
+      ]
+    }
+  ]
+}

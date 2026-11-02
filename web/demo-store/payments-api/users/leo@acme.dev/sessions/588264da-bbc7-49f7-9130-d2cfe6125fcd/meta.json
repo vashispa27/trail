@@ -1,0 +1,19 @@
+{
+  "session_id": "588264da-bbc7-49f7-9130-d2cfe6125fcd",
+  "harness": "codex",
+  "source": "/home/dev/code/codex-sessions/2026/11/02/rollout-2026-11-02T22-42-25-588264da-bbc7-49f7-9130-d2cfe6125fcd.jsonl",
+  "commits": [
+    {
+      "sha": "064166f2079ace776882bd38fd212f4739ef9e6b",
+      "subject": "Reject duplicate refunds and cap refunds per order",
+      "date": "2026-10-28T17:00:00Z",
+      "transcript_range": [
+        0,
+        10
+      ]
+    }
+  ],
+  "title": "Support agents keep double-clicking refund and we refund twice (see reports/refund-abuse.md). Limit refunds to 3 per order per hour and reje",
+  "branch": "main",
+  "last_seen": "2026-10-28T17:00:00Z"
+}

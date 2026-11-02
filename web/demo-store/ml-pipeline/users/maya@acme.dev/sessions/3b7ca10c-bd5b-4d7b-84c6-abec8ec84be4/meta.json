@@ -1,0 +1,19 @@
+{
+  "session_id": "3b7ca10c-bd5b-4d7b-84c6-abec8ec84be4",
+  "harness": "codex",
+  "source": "/home/dev/code/codex-sessions/2026/11/02/rollout-2026-11-02T22-42-27-3b7ca10c-bd5b-4d7b-84c6-abec8ec84be4.jsonl",
+  "commits": [
+    {
+      "sha": "c34dcabc6af9dbfb982a99c2e7f43d379ce5d0d7",
+      "subject": "Dedupe eval prompts by normalized hash",
+      "date": "2026-10-30T17:00:00Z",
+      "transcript_range": [
+        0,
+        10
+      ]
+    }
+  ],
+  "title": "Eval numbers look too good. Check whether eval prompts leak into train and fix the split.",
+  "branch": "main",
+  "last_seen": "2026-10-30T17:00:00Z"
+}

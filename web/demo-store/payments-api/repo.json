@@ -1,0 +1,6 @@
+{
+  "name": "payments-api",
+  "remote": "git@github.com:acme/payments-api.git",
+  "github": null,
+  "demo": true
+}

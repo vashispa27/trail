@@ -1,0 +1,28 @@
+{
+  "sha": "dc7bd6474afaf2af6a27febdf890690c3527536e",
+  "subject": "Disable checkout button while the order is pending",
+  "message": "Disable checkout button while the order is pending\n\nTrail-Session: claude:d02659b5-ec03-4d34-b363-1f0767df0d19\nTrail-Link: http://localhost:8787/repos/web-app/session/d02659b5-ec03-4d34-b363-1f0767df0d19",
+  "author": "Leo Park <leo@acme.dev>",
+  "date": "2026-10-26T17:00:00Z",
+  "branch": "main",
+  "files": [
+    "M src/components/CheckoutButton.tsx"
+  ],
+  "artifacts": {
+    "files": [],
+    "skipped": []
+  },
+  "sessions": [
+    {
+      "key": "claude:d02659b5-ec03-4d34-b363-1f0767df0d19",
+      "harness": "claude",
+      "session_id": "d02659b5-ec03-4d34-b363-1f0767df0d19",
+      "title": "On slow 3G the checkout button flickers and some people manage to place the order twice. Fix it.",
+      "dir": "web-app/users/leo@acme.dev/sessions/d02659b5-ec03-4d34-b363-1f0767df0d19",
+      "transcript_range": [
+        0,
+        10
+      ]
+    }
+  ]
+}

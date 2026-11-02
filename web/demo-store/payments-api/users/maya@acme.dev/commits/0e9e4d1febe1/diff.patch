@@ -1,0 +1,16 @@
+ migrations/0007_processed_events.sql | 7 +++++++
+ 1 file changed, 7 insertions(+)
+
+diff --git a/migrations/0007_processed_events.sql b/migrations/0007_processed_events.sql
+new file mode 100644
+index 0000000..fd3b81f
+--- /dev/null
++++ b/migrations/0007_processed_events.sql
+@@ -0,0 +1,7 @@
++CREATE TABLE processed_events (
++    event_id text PRIMARY KEY,
++    processed_at timestamptz NOT NULL DEFAULT now()
++);
++
++-- one successful capture per order, whatever calls it
++CREATE UNIQUE INDEX captures_one_per_order ON captures (order_id) WHERE status = 'succeeded';

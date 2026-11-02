@@ -1,0 +1,14 @@
+ train.py | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/train.py b/train.py
+index 203c66b..1f2f7ed 100644
+--- a/train.py
++++ b/train.py
+@@ -2,5 +2,5 @@ MODEL = "llama-7b"
+ LORA_RANK = 64
+ LR = 1e-4  # 3e-4 and 2e-4 diverged (run-17, run-18)
+ WARMUP_STEPS = 500
+-GRAD_CLIP = None
++GRAD_CLIP = 1.0
+ EARLY_STOP_PATIENCE = None

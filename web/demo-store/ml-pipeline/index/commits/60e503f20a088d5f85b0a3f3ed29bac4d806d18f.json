@@ -1,0 +1,21 @@
+{
+  "sha": "60e503f20a088d5f85b0a3f3ed29bac4d806d18f",
+  "subject": "Lower LR and lengthen warmup to stop divergence",
+  "date": "2026-10-27T17:00:00Z",
+  "user": "sam@acme.dev",
+  "branch": "main",
+  "commit_dir": "ml-pipeline/users/sam@acme.dev/commits/60e503f20a08",
+  "sessions": [
+    {
+      "key": "claude:285791a1-5658-4fdc-992c-f9a75f8c525f",
+      "harness": "claude",
+      "session_id": "285791a1-5658-4fdc-992c-f9a75f8c525f",
+      "title": "The 7B LoRA fine-tune keeps blowing up around step 400. Logs are in logs/run-17.log. Fix it.",
+      "dir": "ml-pipeline/users/sam@acme.dev/sessions/285791a1-5658-4fdc-992c-f9a75f8c525f",
+      "transcript_range": [
+        0,
+        13
+      ]
+    }
+  ]
+}

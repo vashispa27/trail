@@ -1,0 +1,21 @@
+{
+  "sha": "fa76cc9d0eece4509d8d23659223290bc888f5d7",
+  "subject": "Make payment webhook idempotent",
+  "date": "2026-10-24T17:00:00Z",
+  "user": "maya@acme.dev",
+  "branch": "main",
+  "commit_dir": "payments-api/users/maya@acme.dev/commits/fa76cc9d0eec",
+  "sessions": [
+    {
+      "key": "claude:68969d63-3984-4bbf-a591-a0175931b122",
+      "harness": "claude",
+      "session_id": "68969d63-3984-4bbf-a591-a0175931b122",
+      "title": "Customers are getting charged twice when Stripe retries the payment webhook. The incident log is logs/incident-2291.log. Fix it so a retry c",
+      "dir": "payments-api/users/maya@acme.dev/sessions/68969d63-3984-4bbf-a591-a0175931b122",
+      "transcript_range": [
+        0,
+        14
+      ]
+    }
+  ]
+}

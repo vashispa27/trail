@@ -1,0 +1,21 @@
+{
+  "sha": "064166f2079ace776882bd38fd212f4739ef9e6b",
+  "subject": "Reject duplicate refunds and cap refunds per order",
+  "date": "2026-10-28T17:00:00Z",
+  "user": "leo@acme.dev",
+  "branch": "main",
+  "commit_dir": "payments-api/users/leo@acme.dev/commits/064166f2079a",
+  "sessions": [
+    {
+      "key": "codex:588264da-bbc7-49f7-9130-d2cfe6125fcd",
+      "harness": "codex",
+      "session_id": "588264da-bbc7-49f7-9130-d2cfe6125fcd",
+      "title": "Support agents keep double-clicking refund and we refund twice (see reports/refund-abuse.md). Limit refunds to 3 per order per hour and reje",
+      "dir": "payments-api/users/leo@acme.dev/sessions/588264da-bbc7-49f7-9130-d2cfe6125fcd",
+      "transcript_range": [
+        0,
+        10
+      ]
+    }
+  ]
+}

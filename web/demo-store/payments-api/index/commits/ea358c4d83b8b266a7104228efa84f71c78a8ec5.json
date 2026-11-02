@@ -1,0 +1,9 @@
+{
+  "sha": "ea358c4d83b8b266a7104228efa84f71c78a8ec5",
+  "subject": "Bump stripe to 9.2.0",
+  "date": "2026-10-31T17:00:00Z",
+  "user": "sam@acme.dev",
+  "branch": "main",
+  "commit_dir": "payments-api/users/sam@acme.dev/commits/ea358c4d83b8",
+  "sessions": []
+}

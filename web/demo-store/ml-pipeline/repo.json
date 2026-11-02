@@ -1,0 +1,6 @@
+{
+  "name": "ml-pipeline",
+  "remote": "git@github.com:acme/ml-pipeline.git",
+  "github": null,
+  "demo": true
+}

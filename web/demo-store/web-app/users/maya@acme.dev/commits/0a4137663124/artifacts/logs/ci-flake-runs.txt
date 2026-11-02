@@ -1,0 +1,6 @@
+run 4411  checkout  PASS  order api 210ms
+run 4412  checkout  FAIL  order api 640ms  expected 'Thanks for your order', got 'Placing order…'
+run 4413  checkout  PASS  order api 180ms
+run 4414  checkout  PASS  order api 330ms
+run 4415  checkout  FAIL  order api 710ms  expected 'Thanks for your order', got 'Placing order…'
+failures: 2/5, all with order api > 500ms

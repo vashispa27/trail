@@ -1,0 +1,29 @@
+{
+  "sha": "71444a2ae7d1a5b4bbafd60fd23df72f7c9722e2",
+  "subject": "Add dark mode toggle",
+  "message": "Add dark mode toggle\n\nTrail-Session: claude:8a116eac-745a-4bac-9435-0f21a8b6ca59\nTrail-Link: http://localhost:8787/repos/web-app/session/8a116eac-745a-4bac-9435-0f21a8b6ca59",
+  "author": "Sam Rivera <sam@acme.dev>",
+  "date": "2026-10-29T17:00:00Z",
+  "branch": "main",
+  "files": [
+    "A src/components/ThemeToggle.tsx",
+    "M src/theme.ts"
+  ],
+  "artifacts": {
+    "files": [],
+    "skipped": []
+  },
+  "sessions": [
+    {
+      "key": "claude:8a116eac-745a-4bac-9435-0f21a8b6ca59",
+      "harness": "claude",
+      "session_id": "8a116eac-745a-4bac-9435-0f21a8b6ca59",
+      "title": "Add a dark mode toggle in the header. It should follow the system setting until someone picks, then remember their choice.",
+      "dir": "web-app/users/sam@acme.dev/sessions/8a116eac-745a-4bac-9435-0f21a8b6ca59",
+      "transcript_range": [
+        0,
+        8
+      ]
+    }
+  ]
+}

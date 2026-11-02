@@ -1,0 +1,30 @@
+{
+  "sha": "c34dcabc6af9dbfb982a99c2e7f43d379ce5d0d7",
+  "subject": "Dedupe eval prompts by normalized hash",
+  "message": "Dedupe eval prompts by normalized hash\n\nTrail-Session: codex:3b7ca10c-bd5b-4d7b-84c6-abec8ec84be4\nTrail-Link: http://localhost:8787/repos/ml-pipeline/session/3b7ca10c-bd5b-4d7b-84c6-abec8ec84be4",
+  "author": "Maya Chen <maya@acme.dev>",
+  "date": "2026-10-30T17:00:00Z",
+  "branch": "main",
+  "files": [
+    "M data.py"
+  ],
+  "artifacts": {
+    "files": [
+      "logs/dedupe-report.txt"
+    ],
+    "skipped": []
+  },
+  "sessions": [
+    {
+      "key": "codex:3b7ca10c-bd5b-4d7b-84c6-abec8ec84be4",
+      "harness": "codex",
+      "session_id": "3b7ca10c-bd5b-4d7b-84c6-abec8ec84be4",
+      "title": "Eval numbers look too good. Check whether eval prompts leak into train and fix the split.",
+      "dir": "ml-pipeline/users/maya@acme.dev/sessions/3b7ca10c-bd5b-4d7b-84c6-abec8ec84be4",
+      "transcript_range": [
+        0,
+        10
+      ]
+    }
+  ]
+}

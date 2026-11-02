@@ -1,0 +1,33 @@
+ src/components/CheckoutButton.tsx | 17 ++++++++++++++---
+ 1 file changed, 14 insertions(+), 3 deletions(-)
+
+diff --git a/src/components/CheckoutButton.tsx b/src/components/CheckoutButton.tsx
+index 33138b5..e78e837 100644
+--- a/src/components/CheckoutButton.tsx
++++ b/src/components/CheckoutButton.tsx
+@@ -1,11 +1,22 @@
+ export function CheckoutButton({ cart }: { cart: Cart }) {
+   const [loading, setLoading] = useState(false);
++  const inFlight = useRef(false); // two quick taps both see loading=false
+ 
+   async function submit() {
++    if (inFlight.current) return;
++    inFlight.current = true;
+     setLoading(true);
+-    await placeOrder(cart);
+-    setLoading(false);
++    try {
++      await placeOrder(cart);
++    } finally {
++      inFlight.current = false;
++      setLoading(false);
++    }
+   }
+ 
+-  return <button onClick={submit}>{loading ? <Spinner /> : "Place order"}</button>;
++  return (
++    <button onClick={submit} disabled={loading} aria-busy={loading} style={{ minWidth: 140 }}>
++      {loading ? <Spinner /> : "Place order"}
++    </button>
++  );
+ }

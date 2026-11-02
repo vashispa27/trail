@@ -1,0 +1,16 @@
+ e2e/checkout.spec.ts | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+diff --git a/e2e/checkout.spec.ts b/e2e/checkout.spec.ts
+index ca3c4bf..0551641 100644
+--- a/e2e/checkout.spec.ts
++++ b/e2e/checkout.spec.ts
+@@ -1,6 +1,7 @@
+ test("checkout", async ({ page }) => {
+   await page.goto("/cart");
++  const order = page.waitForResponse((r) => r.url().endsWith("/api/orders") && r.ok());
+   await page.click("text=Place order");
+-  await page.waitForTimeout(500);
++  await order; // a fixed 500ms sleep failed whenever the API took longer
+   await expect(page.locator("h1")).toHaveText("Thanks for your order");
+ });

@@ -1,0 +1,21 @@
+{
+  "sha": "50a95a3c13b85c46d67fe705903f992e3a1a85f2",
+  "subject": "Initial commit",
+  "message": "Initial commit",
+  "author": "Sam Rivera <sam@acme.dev>",
+  "date": "2026-10-20T17:00:00Z",
+  "branch": "main",
+  "files": [
+    "A .gitignore",
+    "A .trail.yaml",
+    "A README.md",
+    "A app/refunds.py",
+    "A app/webhooks.py",
+    "A requirements.txt"
+  ],
+  "artifacts": {
+    "files": [],
+    "skipped": []
+  },
+  "sessions": []
+}

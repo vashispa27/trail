@@ -1,0 +1,21 @@
+{
+  "sha": "dc7bd6474afaf2af6a27febdf890690c3527536e",
+  "subject": "Disable checkout button while the order is pending",
+  "date": "2026-10-26T17:00:00Z",
+  "user": "leo@acme.dev",
+  "branch": "main",
+  "commit_dir": "web-app/users/leo@acme.dev/commits/dc7bd6474afa",
+  "sessions": [
+    {
+      "key": "claude:d02659b5-ec03-4d34-b363-1f0767df0d19",
+      "harness": "claude",
+      "session_id": "d02659b5-ec03-4d34-b363-1f0767df0d19",
+      "title": "On slow 3G the checkout button flickers and some people manage to place the order twice. Fix it.",
+      "dir": "web-app/users/leo@acme.dev/sessions/d02659b5-ec03-4d34-b363-1f0767df0d19",
+      "transcript_range": [
+        0,
+        10
+      ]
+    }
+  ]
+}
