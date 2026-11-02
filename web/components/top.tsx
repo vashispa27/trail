@@ -10,12 +10,12 @@ export function Crumbs() {
     <div className="crumbs">
       {repo ? (
         <>
-          <Link href="/repos">trail</Link>
+          <Link href="/repos">Trail</Link>
           <span className="sep">/</span>
           <b><Link href={`/repos/${encodeURIComponent(repo)}`}>{repo}</Link></b>
         </>
       ) : (
-        <b><Link href="/repos">trail</Link></b>
+        <b><Link href="/repos">Trail</Link></b>
       )}
     </div>
   );

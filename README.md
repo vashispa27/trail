@@ -1,6 +1,6 @@
-# trail
+# Trail
 
-The why behind every commit. trail links each git commit to the AI agent sessions that wrote it (Claude Code, Codex), plus the logs and files you choose.
+The why behind every commit. Trail links each git commit to the AI agent sessions that wrote it (Claude Code, Codex), plus the logs and files you choose.
 
 ## Why we built this
 
@@ -15,7 +15,7 @@ Agents now write a lot of our code. The thinking behind that code (the prompt, t
 
 ## The solution
 
-trail installs two git hooks. When you commit, it:
+Trail installs two git hooks. When you commit, it:
 
 1. Finds the Claude Code or Codex session that edited the staged files.
 2. Adds a `Trail-Session` line (and a `Trail-Link` to the dashboard) to the commit message.
@@ -66,7 +66,7 @@ Try it without a real repo: `sh demo/run_demo.sh` builds a throwaway repo, fakes
 | `trail record [REV]` | add an existing commit to the trail |
 | `trail pull [PATH] [--all]` | update the local copy of the store |
 | `trail push` | upload anything that failed to upload |
-| `trail path` | print the local folder of this repo's trail |
+| `trail path` | print the local folder of this repo's Trail |
 | `trail ui [--port 8787]` | open the dashboard over your store |
 
 ## Dashboard

@@ -4,7 +4,7 @@ import { GhAvatar, Icon, When, plural } from "@/components/ui";
 import { href } from "@/lib/format";
 import { summaries } from "@/lib/store";
 
-export const metadata = { title: "Repositories · trail" };
+export const metadata = { title: "Repositories · Trail" };
 
 export default async function Home() {
   const repos = await summaries();

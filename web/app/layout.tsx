@@ -6,8 +6,8 @@ const sans = Geist({ subsets: ["latin"], variable: "--font-sans" });
 const mono = Geist_Mono({ subsets: ["latin"], variable: "--font-mono" });
 
 export const metadata: Metadata = {
-  title: "trail: the why behind every commit",
-  description: "trail links every commit to the agent sessions that wrote it: prompts, reasoning, logs and artifacts.",
+  title: "Trail: the why behind every commit",
+  description: "Trail links every commit to the agent sessions that wrote it: prompts, reasoning, logs and artifacts.",
 };
 
 // Applies the dashboard theme before paint (the landing page is always light).
